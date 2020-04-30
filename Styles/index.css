@@ -1,0 +1,83 @@
+:root {
+    --text-width: 45rem;
+    --brand-primary-1: #004286;
+    --brand-primary-2: #d60042;
+}
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+a {
+    font-weight: var(--regular);
+    color: var(--brand-primary-1);
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid silver;
+    margin: 1.5rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.site-header {
+    padding: 1rem;
+}
+
+.page-header,
+.text-section {
+    max-width: var(--text-width);
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+.image-section,
+.embed-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(var(--text-width) - 2rem);
+    max-width: calc(100% - 2rem);
+    padding: 1rem;
+    background-color: gainsboro;
+    text-align: center;
+}
+
+.image-section__caption {
+    font-size: small;
+    padding-top: 1em;
+}

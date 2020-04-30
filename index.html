@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ Page Title }} | RCN Design System</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="/">
+            <img src="rcnlogo.svg" alt="Royal College of Nursing">
+            {{ Website Name }}</a>
+    </header>
+
+    <main class="page-content">
+        <header class="page-header">
+            <h1>{{ Page Title }}</h1>
+            <small>{{ Last updated 20 May 2020 by Pete Davis }}</small>
+            <p>{{ Page Abstract }}</p>
+        </header>
+
+        <section class="text-section">
+            {{ Content }}
+        </section>
+
+        <figure class="image-section">
+            <picture>
+                <source media="(min-width: 900px)" srcset="largeImageSrc">
+                <source media="(min-width: 500px)" srcset="mediumImageSrc">
+                <img class="image-section__image" src="{{ smallImageSrc }}" alt="{{ imageAlt }}" width="{{ imageAlt }}"
+                    height="{{ imageAlt }}" loading="lazy">
+            </picture>
+            <figcaption class="image-section__caption">{{ imageDescription }}</figcaption>
+        </figure>
+
+        <section class="embed-section">
+            {{ Embed Code }}
+        </section>
+    </main>
+</body>
+
+</html>

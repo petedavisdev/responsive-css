@@ -1,0 +1,22 @@
+.page-header,
+.text-section {
+    max-width: var(--width-content);
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+.image-section,
+.embed-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(var(--width-content) - 2rem);
+    max-width: calc(100% - 2rem);
+    padding: 1rem;
+    background-color: orange;
+    text-align: center;
+}
+
+.image-section__caption {
+    font-size: small;
+    padding-top: 1em;
+}

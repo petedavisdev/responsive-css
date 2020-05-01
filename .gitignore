@@ -1,1 +1,4 @@
-Views/
+Views
+node_modules
+dist
+.cache
